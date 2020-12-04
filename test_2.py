@@ -47,3 +47,31 @@ def calculate_percent_above_average(avg_grade):
 
 main()
 """
+
+
+
+def main():
+  dictionary = create_dictionary("final.txt")
+  num_grades = create_number_of_grades(dictionary)
+  avg_grade = create_average_grade(num_grades)
+  calculate_percent_above_average = create_percenta_above_average(avg_grade)
+
+def create_dictionary(txt_file):
+  infile = open(txt_file, "r")
+  grades = [grade.rstrip() for grade in infile]
+  infile.close()
+  return dict
+
+def num_grades(dict):
+    num = len("final.txt")
+    print(num)
+
+def avg_grade(num_grades):
+    avg = grades / num
+    print(avg)
+
+def calculate_percent_above_average(avg_grade):
+    percentage = (grades > avg) / num
+    print(percentage)
+
+main()
